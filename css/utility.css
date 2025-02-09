@@ -1,0 +1,54 @@
+
+.flex{
+    display: flex;
+}
+.justify-center{
+    justify-content: center;
+}
+.align-items{
+    align-items: center;
+}
+.bg-black{
+    background-color: black;
+    color:white;
+}
+.bg-grey{
+    background-color: #121212;
+}
+.rounded{
+    border-radius: 7px;
+}
+.m1{
+    margin:10px;
+}
+.m2{
+   margin-top: 12px;
+   margin-left:0px;
+}
+.paddy{
+    padding:15px;
+}
+.font{
+    font-weight: 700;
+}
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #1e1e1e; 
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #555; 
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #777; 
+}
+html {
+    scrollbar-color: #555 #1e1e1e; 
+}
+
