@@ -19,7 +19,7 @@ async function getsongs() {
 const playmusic=(track)=>{
    currentsong.src="/songs/" +track
    currentsong.play()
-    play.src="pause.svg"
+    play.src="images/pause.svg"
     document.querySelector(".songinfo").innerHTML=track;
     document.querySelector(".duration").innerHTML="00:00/00.00";
 
@@ -32,14 +32,14 @@ async function main() {
 
         songul.innerHTML = songul.innerHTML + `
                         <li>
-                            <img class="invert"src="music.svg">
+                            <img class="invert"src="images/music.svg">
                             <div class="one">
                                 <p>${song.replaceAll("%20", " ")}</p>
                                 <p>artist name</p>
                             </div>
                             <div class="playnow">
                             <span> play now</span>
-                            <img class="invert" src="play.svg">
+                            <img class="invert" src="images/play.svg">
                             </div>
                         </li>`;
     }
@@ -53,11 +53,11 @@ async function main() {
     play.addEventListener("click",()=>{
         if(currentsong.paused){
              currentsong.play()
-             play.src="pause.svg"
+             play.src="images/pause.svg"
         }
         else{
             currentsong.pause()
-            play.src="play.svg"
+            play.src="images/play.svg"
         }
         play.addEventListener.style.position="fixed";
     })
